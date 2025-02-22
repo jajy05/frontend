@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.get-started-section {
+    background-color: darkred; /* Dark red background */
+    color: white; /* White text for contrast */
+    padding: 100px 20px; /* Equal padding for spacing */
+    width: 100%;
+    min-height: 50vh; /* Ensures the section covers full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+}
+
+.get-started-content {
+    max-width: 800px; 
+    margin-left: 20px;/* Restricts content width */
+    margin: 0 auto;
+    text-align: left; /* Aligns text to the left */
+}
+
+.get-started-content h1 {
+    font-size: 42px; /* Increased font size for emphasis */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Optional: Make text uppercase */
+}
+
+.get-started-content p {
+    font-size: 18px; /* Consistent font size */
+    margin-bottom: 30px; /* Space between paragraphs */
+    line-height: 1.6; /* Improves readability */
+}
+
+.request-callback-btn {
+    margin-top: 20px;
+    background-color: white; /* Button stands out against dark red */
+    color: darkred; /* Matches section theme */
+    border: none;
+    padding: 15px 40px; /* Larger padding for prominent button */
+    font-size: 18px; /* Slightly larger text */
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.request-callback-btn:hover {
+    background-color: #f5f5f5; /* Slightly lighter hover color */
+    transform: scale(1.05); /* Slight zoom effect */
+    color: darkred; /* Maintains text visibility */
+}

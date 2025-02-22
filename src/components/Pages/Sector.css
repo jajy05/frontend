@@ -1,0 +1,121 @@
+/* Main Container for the Sector Section */
+.sec {
+    padding: 50px 20px;
+    background-color: #f4f7fa;
+    text-align: center;
+  }
+  
+  /* Info Section */
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .info h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+  }
+  
+  .info p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Image Container */
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three images per row */
+    gap: 10px; /* Reduced gap between images */
+    justify-items: center;
+    grid-auto-rows: 350px; /* Ensures the rows are consistent in height */
+  }
+  
+  /* Individual Sector Item */
+  .sector-item {
+    position: relative;
+    width: 100%; /* Allow image to take up full width of container */
+    height: 100%; /* Allow image to take up full height of container */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Adjusted Image Size */
+  .sector-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the area */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .sector-item:hover img {
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  /* Label for the Image */
+  .label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 2;
+  }
+  
+  /* View Details Button */
+  .view-details {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-details:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .image-container {
+      grid-template-columns: repeat(2, 1fr); /* Two images per row for smaller screens */
+    }
+  
+    .sector-item {
+      width: 100%; /* Make each sector item take full width */
+      height: 250px;
+    }
+  
+    .info h1 {
+      font-size: 2rem;
+    }
+  
+    .info p {
+      font-size: 1rem;
+    }
+  }
+  

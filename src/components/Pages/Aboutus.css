@@ -1,0 +1,150 @@
+/* About Us Section */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  background-color: #f4f7fa;
+  box-sizing: border-box;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 50px; /* Added gap for spacing between image and text */
+}
+
+.about-image {
+  flex: 1;
+  margin-right: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative; /* For absolute positioning of the block */
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.experience-block {
+  position: absolute;
+  top: 0; /* Aligned exactly to the top of the image */
+  left: 0; /* Aligned exactly to the left of the image */
+  background-color: white; /* Changed to white */
+  color: black; /* Default text color is black */
+  padding: 20px 30px; /* Increased padding for a larger block */
+  font-size: 2.5rem; /* Increased font size */
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Added shadow for a more professional look */
+  z-index: 10;
+}
+
+.experience-text {
+  display: block;
+  font-size: 1.5rem; /* Increased the size of '34+' */
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: red; /* Made '34+' text red */
+  font-size: 5rem; /* Increased font size of '34+' */
+}
+
+.experience-text span {
+  font-size: 1.5rem; /* Adjusted the size of 'Years of Experience' */
+  font-weight: normal;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 500px;
+  text-align: left; /* Center-align the text */
+}
+
+.about-text h1 {
+  font-size: 1rem;
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: red;
+}
+
+.about-text h2 {
+  font-size: 3rem;
+  
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #7f8c8d;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.more-about-btn {
+  display: inline-block;
+  font-size: 25px;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #d60000; /* Red background */
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.more-about-btn:hover {
+  background-color: #a80000;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .about-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+  }
+
+  .experience-block {
+    font-size: 1.5rem; /* Adjust text size for mobile */
+    padding: 15px 20px;
+  }
+
+  .experience-text {
+    font-size: 2rem; /* Adjusted size for mobile */
+  }
+}

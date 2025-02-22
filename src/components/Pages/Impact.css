@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.our-impacts {
+    background-color: darkred; /* Dark red background */
+    color: white; /* White text for contrast */
+    padding: 100px 20px; /* Increased padding for more vertical space */
+    width: 100%;
+    min-height: 600px; /* Ensures a minimum height for the section */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+}
+
+.our-impacts h2 {
+    margin-left: 50px;
+    text-align: left;
+    font-size: 24px; /* Slightly larger font size */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Optional: Make text uppercase */
+}
+
+.our-impacts h1 {
+    margin-left: 50px;
+    text-align: left;
+    font-size: 42px; /* Increased font size for better emphasis */
+    margin-bottom: 20px;
+}
+
+.our-impacts p {
+    margin-left: 50px;
+    text-align: left;
+    font-size: 18px; /* Consistent font size */
+    margin-bottom: 40px; /* Extra space after paragraph */
+}
+
+/* Grid for the Cards */
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted for larger cards */
+    gap: 30px; /* Increased space between cards */
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 40px; /* Added margin to separate grid from the text */
+}
+
+/* Card Styling */
+.impact-card {
+    background-color: white; /* White background for contrast */
+    color: darkred; /* Match section color */
+    padding: 30px; /* Increased padding for larger cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    text-align: center;
+}
+
+.impact-card h3 {
+    font-size: 48px; /* Larger font for emphasis */
+    margin: 0 0 15px;
+    font-weight: bold;
+}
+
+.impact-card p {
+    font-size: 20px; /* Slightly larger text for readability */
+    margin: 0;
+    font-weight: 500;
+}

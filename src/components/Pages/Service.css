@@ -1,0 +1,116 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Service Section */
+  .service-section {
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #f5f7fa, #ffffff);
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .service-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .service-header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+  }
+  
+  /* Service Content */
+  .service-content {
+    display: flex;
+    flex-wrap: nowrap; /* Disable wrapping */
+    gap: 20px;
+    overflow-x: auto; /* Add horizontal scroll for small screens */
+    padding-bottom: 10px; /* Space for scrollbar */
+  }
+  
+  .service-content::-webkit-scrollbar {
+    height: 8px; /* Custom scrollbar height */
+  }
+  
+  .service-content::-webkit-scrollbar-thumb {
+    background: #3498db; /* Scrollbar color */
+    border-radius: 5px;
+  }
+  
+  .service-content::-webkit-scrollbar-track {
+    background: #f0f0f0;
+  }
+  
+  /* Service Card */
+  .service-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    min-width: 300px; /* Fixed width for consistent sizing */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    flex: 0 0 auto; /* Prevent shrinking */
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-icon {
+    font-size: 3rem;
+    color: #3498db;
+    margin-bottom: 15px;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+  }
+  
+  .service-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .service-card ul li {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin: 10px 0;
+    padding-left: 25px;
+    position: relative;
+  }
+  
+  .service-card ul li::before {
+    content: '•';
+    color: #3498db;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .service-card {
+      min-width: 250px; /* Reduce card size for smaller screens */
+    }
+  }
+  

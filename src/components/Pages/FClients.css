@@ -1,0 +1,59 @@
+/* General Section Styling */
+section {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Light gray background for contrast */
+    text-align: center;
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+}
+
+.head h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Images Grid */
+.immg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 30px; /* Space between images */
+    justify-items: center; /* Center images in each grid cell */
+    max-width: 1200px; /* Optional: Limit overall width */
+    margin: 0 auto; /* Center grid within the section */
+}
+
+.immg img {
+    width: 300px; /* Adjust size of images */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* Button Styling */
+.View-all-clients {
+    background-color: darkred; /* Match the website's theme */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 auto; /* Ensure the button stays horizontally centered */
+}
+
+.View-all-clients:hover {
+    background-color: #a00000; /* Slightly darker red on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+.row1{
+    display: flex;
+    flex-direction: column;
+    
+}

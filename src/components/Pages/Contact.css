@@ -1,0 +1,80 @@
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Row 1: Align section-1 and section-newsletter in one row */
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;  /* Ensures row takes up full available width */
+}
+
+.section-1 {
+    flex:1 ;  /* Occupies more space */
+    max-width: 60%;  /* Optional: Limit the max width for better control */
+}
+
+.section-newsletter {
+    flex: 1;  /* Occupies less space */
+    text-align: left;
+}
+
+/* Optional: Ensure the newsletter input and button fill the space properly */
+.section-newsletter input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.section-newsletter button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.section-newsletter button:hover {
+    background-color: #a00000;
+}
+
+/* Grid for the rest of the sections */
+.grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.grid .section {
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+}
+
+.grid h2,
+.contact h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 3px solid red;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.grid p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,149 @@
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .hero-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position:absolute;
+    z-index: 2; /* Above the background */
+    text-align: left;
+    color: white;
+    /* Semi-transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 100px;
+    max-width: 600px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: left;
+    margin-bottom: 20px;
+  }
+  
+  .hero-buttons button {
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .hero-buttons button:nth-child(1) {
+    background-color: darkred;
+    color: white;
+  }
+  
+  .hero-buttons button:nth-child(2) {
+    background-color: white;
+    color: darkred;
+    border: 1px solid darkred;
+  }
+  
+  .hero-buttons button:hover:nth-child(1) {
+    background-color: #a00000;
+  }
+  
+  .hero-buttons button:hover:nth-child(2) {
+    background-color: darkred;
+    color: white;
+  }
+  
+  .blocks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:last baseline;
+    gap: 20px;
+    position: absolute;
+    bottom: 20%; /* Adjust this value to control the overlap */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Ensure it fits the container */
+    z-index: 2;
+  }
+  
+  .block {
+    flex: 1;
+    max-width: 220px;
+    padding: 20px;
+    background-color: white;
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .block h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: darkred;
+  }
+  
+  .block p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  
+  .notice-section {
+    position: relative;
+    z-index: 2;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3); /* Adds slight elevation */
+    font-family: Arial, sans-serif; /* Match font style */
+}
+
+.notice-section h3 {
+    margin: 0;
+    font-size: 1.5rem; /* Increase size for prominence */
+    font-weight: bold;
+}
+
+.notice-section p {
+    margin: 5px 0 0;
+    font-size: 1.1rem; /* Adjust for better readability */
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: 50px; /* Ensure space for notice section */
+}
