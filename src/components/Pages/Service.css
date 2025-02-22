@@ -1,116 +1,123 @@
-/* General Reset */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-  }
-  
-  /* Service Section */
-  .service-section {
-    padding: 80px 20px;
-    background: linear-gradient(180deg, #f5f7fa, #ffffff);
-    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .service-header h1 {
-    font-size: 2.5rem;
-    color: #2c3e50;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  
-  .service-header p {
-    font-size: 1.2rem;
-    color: #7f8c8d;
-    margin-bottom: 40px;
-  }
-  
-  /* Service Content */
-  .service-content {
-    display: flex;
-    flex-wrap: nowrap; /* Disable wrapping */
-    gap: 20px;
-    overflow-x: auto; /* Add horizontal scroll for small screens */
-    padding-bottom: 10px; /* Space for scrollbar */
-  }
-  
-  .service-content::-webkit-scrollbar {
-    height: 8px; /* Custom scrollbar height */
-  }
-  
-  .service-content::-webkit-scrollbar-thumb {
-    background: #3498db; /* Scrollbar color */
-    border-radius: 5px;
-  }
-  
-  .service-content::-webkit-scrollbar-track {
-    background: #f0f0f0;
-  }
-  
-  /* Service Card */
-  .service-card {
-    background: #ffffff;
-    border-radius: 10px;
-    padding: 30px;
-    min-width: 300px; /* Fixed width for consistent sizing */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
-    flex: 0 0 auto; /* Prevent shrinking */
-  }
-  
-  .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card-icon {
-    font-size: 3rem;
-    color: #3498db;
-    margin-bottom: 15px;
-  }
-  
-  .service-card h3 {
-    font-size: 1.5rem;
-    color: #2c3e50;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #3498db;
-    display: inline-block;
-  }
-  
-  .service-card ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .service-card ul li {
-    font-size: 1rem;
-    color: #7f8c8d;
-    margin: 10px 0;
-    padding-left: 25px;
-    position: relative;
-  }
-  
-  .service-card ul li::before {
-    content: '•';
-    color: #3498db;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .service-card {
-      min-width: 250px; /* Reduce card size for smaller screens */
-    }
-  }
-  
+.service-section {
+  padding: 60px 10%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title & Description Section */
+.container-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.service-header {
+  flex: 1;
+  text-align: left;
+}
+
+.service-header h1 {
+  color: #d60000; /* Red Title */
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.service-header p {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000000; /* Black Bold Heading */
+  margin: 0;
+}
+
+.about {
+  flex: 1;
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Service Cards Layout */
+.service-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Remove hover effect from entire service card */
+.service-card {
+  background: #f8f8f8;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* Apply hover effect to each <li> */
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-card li {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 2px;
+  padding: 6px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect only on <li> */
+.service-card li:hover {
+  transform: translateX(10px);
+  background-color: rgba(214, 0, 0, 0.1);
+  box-shadow: 2px 2px 10px rgba(214, 0, 0, 0.2);
+}
+
+/* Small Icon Next to Each List Item */
+.service-card li img {
+  width: 30px; /* Small icon size */
+  height: 30px;
+  margin-right: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Icons */
+.service-card li img:hover {
+  transform: scale(1.1);
+}
+
+/* Icon in Header (Hover Effect) */
+.card-icon i {
+  font-size: 28px;
+  color: #d60000;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.card-icon i:hover {
+  transform: scale(1.2);
+  color: #a80000;
+}
+.heads h1 {
+  text-align: center;
+  color: #d60000; /* Red color */
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
